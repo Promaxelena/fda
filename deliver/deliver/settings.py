@@ -109,11 +109,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
+#TIME_ZONE = 'America/New_York'
 
 
 # Static files (CSS, JavaScript, Images)
@@ -123,6 +124,8 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 
